@@ -1,0 +1,200 @@
+2026-01-30T10:00:01 INFO AuthService User login user=101
+2026-01-30T10:00:02 INFO AuthService User login user=102
+2026-01-30T10:00:03 WARN ApiService Slow response api=/search
+2026-01-30T10:00:04 ERROR PaymentService Payment failed user=103
+2026-01-30T10:00:05 INFO AuthService User logout user=101
+2026-01-30T10:00:06 INFO OrderService Order created order=5001
+2026-01-30T10:00:07 INFO CartService Cart updated user=104
+2026-01-30T10:00:08 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:09 ERROR DatabaseService Database timeout
+2026-01-30T10:00:10 INFO AuthService User login user=105
+2026-01-30T10:00:11 INFO AuthService User login user=106
+2026-01-30T10:00:12 WARN CacheService Cache miss key=user_105
+2026-01-30T10:00:13 ERROR PaymentService Payment failed user=107
+2026-01-30T10:00:14 INFO OrderService Order created order=5002
+2026-01-30T10:00:15 INFO CartService Cart updated user=108
+2026-01-30T10:00:16 WARN ApiService Slow response api=/checkout
+2026-01-30T10:00:17 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:18 INFO AuthService User logout user=102
+2026-01-30T10:00:19 INFO AuthService User login user=109
+2026-01-30T10:00:20 INFO OrderService Order created order=5003
+2026-01-30T10:00:21 WARN ApiService Slow response api=/search
+2026-01-30T10:00:22 ERROR PaymentService Payment failed user=110
+2026-01-30T10:00:23 INFO AuthService User login user=111
+2026-01-30T10:00:24 INFO CartService Cart updated user=112
+2026-01-30T10:00:25 WARN MemoryService High memory usage
+2026-01-30T10:00:26 ERROR DatabaseService Database timeout
+2026-01-30T10:00:27 INFO OrderService Order created order=5004
+2026-01-30T10:00:28 INFO AuthService User login user=113
+2026-01-30T10:00:29 WARN DiskService Disk almost full
+2026-01-30T10:00:30 ERROR PaymentService Payment failed user=114
+2026-01-30T10:00:31 INFO AuthService User logout user=105
+2026-01-30T10:00:32 INFO AuthService User login user=115
+2026-01-30T10:00:33 INFO OrderService Order created order=5005
+2026-01-30T10:00:34 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:35 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:36 INFO CartService Cart updated user=116
+2026-01-30T10:00:37 INFO AuthService User login user=117
+2026-01-30T10:00:38 WARN CacheService Cache miss key=user_117
+2026-01-30T10:00:39 ERROR DatabaseService Database timeout
+2026-01-30T10:00:40 INFO OrderService Order created order=5006
+2026-01-30T10:00:01 INFO AuthService User login user=101
+2026-01-30T10:00:02 INFO AuthService User login user=102
+2026-01-30T10:00:03 WARN ApiService Slow response api=/search
+2026-01-30T10:00:04 ERROR PaymentService Payment failed user=103
+2026-01-30T10:00:05 INFO AuthService User logout user=101
+2026-01-30T10:00:06 INFO OrderService Order created order=5001
+2026-01-30T10:00:07 INFO CartService Cart updated user=104
+2026-01-30T10:00:08 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:09 ERROR DatabaseService Database timeout
+2026-01-30T10:00:10 INFO AuthService User login user=105
+2026-01-30T10:00:11 INFO AuthService User login user=106
+2026-01-30T10:00:12 WARN CacheService Cache miss key=user_105
+2026-01-30T10:00:13 ERROR PaymentService Payment failed user=107
+2026-01-30T10:00:14 INFO OrderService Order created order=5002
+2026-01-30T10:00:15 INFO CartService Cart updated user=108
+2026-01-30T10:00:16 WARN ApiService Slow response api=/checkout
+2026-01-30T10:00:17 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:18 INFO AuthService User logout user=102
+2026-01-30T10:00:19 INFO AuthService User login user=109
+2026-01-30T10:00:20 INFO OrderService Order created order=5003
+2026-01-30T10:00:21 WARN ApiService Slow response api=/search
+2026-01-30T10:00:22 ERROR PaymentService Payment failed user=110
+2026-01-30T10:00:23 INFO AuthService User login user=111
+2026-01-30T10:00:24 INFO CartService Cart updated user=112
+2026-01-30T10:00:25 WARN MemoryService High memory usage
+2026-01-30T10:00:26 ERROR DatabaseService Database timeout
+2026-01-30T10:00:27 INFO OrderService Order created order=5004
+2026-01-30T10:00:28 INFO AuthService User login user=113
+2026-01-30T10:00:29 WARN DiskService Disk almost full
+2026-01-30T10:00:30 ERROR PaymentService Payment failed user=114
+2026-01-30T10:00:31 INFO AuthService User logout user=105
+2026-01-30T10:00:32 INFO AuthService User login user=115
+2026-01-30T10:00:33 INFO OrderService Order created order=5005
+2026-01-30T10:00:34 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:35 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:36 INFO CartService Cart updated user=116
+2026-01-30T10:00:37 INFO AuthService User login user=117
+2026-01-30T10:00:38 WARN CacheService Cache miss key=user_117
+2026-01-30T10:00:39 ERROR DatabaseService Database timeout
+2026-01-30T10:00:40 INFO OrderService Order created order=5006
+2026-01-30T10:00:01 INFO AuthService User login user=101
+2026-01-30T10:00:02 INFO AuthService User login user=102
+2026-01-30T10:00:03 WARN ApiService Slow response api=/search
+2026-01-30T10:00:04 ERROR PaymentService Payment failed user=103
+2026-01-30T10:00:05 INFO AuthService User logout user=101
+2026-01-30T10:00:06 INFO OrderService Order created order=5001
+2026-01-30T10:00:07 INFO CartService Cart updated user=104
+2026-01-30T10:00:08 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:09 ERROR DatabaseService Database timeout
+2026-01-30T10:00:10 INFO AuthService User login user=105
+2026-01-30T10:00:11 INFO AuthService User login user=106
+2026-01-30T10:00:12 WARN CacheService Cache miss key=user_105
+2026-01-30T10:00:13 ERROR PaymentService Payment failed user=107
+2026-01-30T10:00:14 INFO OrderService Order created order=5002
+2026-01-30T10:00:15 INFO CartService Cart updated user=108
+2026-01-30T10:00:16 WARN ApiService Slow response api=/checkout
+2026-01-30T10:00:17 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:18 INFO AuthService User logout user=102
+2026-01-30T10:00:19 INFO AuthService User login user=109
+2026-01-30T10:00:20 INFO OrderService Order created order=5003
+2026-01-30T10:00:21 WARN ApiService Slow response api=/search
+2026-01-30T10:00:22 ERROR PaymentService Payment failed user=110
+2026-01-30T10:00:23 INFO AuthService User login user=111
+2026-01-30T10:00:24 INFO CartService Cart updated user=112
+2026-01-30T10:00:25 WARN MemoryService High memory usage
+2026-01-30T10:00:26 ERROR DatabaseService Database timeout
+2026-01-30T10:00:27 INFO OrderService Order created order=5004
+2026-01-30T10:00:28 INFO AuthService User login user=113
+2026-01-30T10:00:29 WARN DiskService Disk almost full
+2026-01-30T10:00:30 ERROR PaymentService Payment failed user=114
+2026-01-30T10:00:31 INFO AuthService User logout user=105
+2026-01-30T10:00:32 INFO AuthService User login user=115
+2026-01-30T10:00:33 INFO OrderService Order created order=5005
+2026-01-30T10:00:34 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:35 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:36 INFO CartService Cart updated user=116
+2026-01-30T10:00:37 INFO AuthService User login user=117
+2026-01-30T10:00:38 WARN CacheService Cache miss key=user_117
+2026-01-30T10:00:39 ERROR DatabaseService Database timeout
+2026-01-30T10:00:40 INFO OrderService Order created order=5006
+2026-01-30T10:00:01 INFO AuthService User login user=101
+2026-01-30T10:00:02 INFO AuthService User login user=102
+2026-01-30T10:00:03 WARN ApiService Slow response api=/search
+2026-01-30T10:00:04 ERROR PaymentService Payment failed user=103
+2026-01-30T10:00:05 INFO AuthService User logout user=101
+2026-01-30T10:00:06 INFO OrderService Order created order=5001
+2026-01-30T10:00:07 INFO CartService Cart updated user=104
+2026-01-30T10:00:08 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:09 ERROR DatabaseService Database timeout
+2026-01-30T10:00:10 INFO AuthService User login user=105
+2026-01-30T10:00:11 INFO AuthService User login user=106
+2026-01-30T10:00:12 WARN CacheService Cache miss key=user_105
+2026-01-30T10:00:13 ERROR PaymentService Payment failed user=107
+2026-01-30T10:00:14 INFO OrderService Order created order=5002
+2026-01-30T10:00:15 INFO CartService Cart updated user=108
+2026-01-30T10:00:16 WARN ApiService Slow response api=/checkout
+2026-01-30T10:00:17 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:18 INFO AuthService User logout user=102
+2026-01-30T10:00:19 INFO AuthService User login user=109
+2026-01-30T10:00:20 INFO OrderService Order created order=5003
+2026-01-30T10:00:21 WARN ApiService Slow response api=/search
+2026-01-30T10:00:22 ERROR PaymentService Payment failed user=110
+2026-01-30T10:00:23 INFO AuthService User login user=111
+2026-01-30T10:00:24 INFO CartService Cart updated user=112
+2026-01-30T10:00:25 WARN MemoryService High memory usage
+2026-01-30T10:00:26 ERROR DatabaseService Database timeout
+2026-01-30T10:00:27 INFO OrderService Order created order=5004
+2026-01-30T10:00:28 INFO AuthService User login user=113
+2026-01-30T10:00:29 WARN DiskService Disk almost full
+2026-01-30T10:00:30 ERROR PaymentService Payment failed user=114
+2026-01-30T10:00:31 INFO AuthService User logout user=105
+2026-01-30T10:00:32 INFO AuthService User login user=115
+2026-01-30T10:00:33 INFO OrderService Order created order=5005
+2026-01-30T10:00:34 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:35 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:36 INFO CartService Cart updated user=116
+2026-01-30T10:00:37 INFO AuthService User login user=117
+2026-01-30T10:00:38 WARN CacheService Cache miss key=user_117
+2026-01-30T10:00:39 ERROR DatabaseService Database timeout
+2026-01-30T10:00:40 INFO OrderService Order created order=5006
+2026-01-30T10:00:01 INFO AuthService User login user=101
+2026-01-30T10:00:02 INFO AuthService User login user=102
+2026-01-30T10:00:03 WARN ApiService Slow response api=/search
+2026-01-30T10:00:04 ERROR PaymentService Payment failed user=103
+2026-01-30T10:00:05 INFO AuthService User logout user=101
+2026-01-30T10:00:06 INFO OrderService Order created order=5001
+2026-01-30T10:00:07 INFO CartService Cart updated user=104
+2026-01-30T10:00:08 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:09 ERROR DatabaseService Database timeout
+2026-01-30T10:00:10 INFO AuthService User login user=105
+2026-01-30T10:00:11 INFO AuthService User login user=106
+2026-01-30T10:00:12 WARN CacheService Cache miss key=user_105
+2026-01-30T10:00:13 ERROR PaymentService Payment failed user=107
+2026-01-30T10:00:14 INFO OrderService Order created order=5002
+2026-01-30T10:00:15 INFO CartService Cart updated user=108
+2026-01-30T10:00:16 WARN ApiService Slow response api=/checkout
+2026-01-30T10:00:17 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:18 INFO AuthService User logout user=102
+2026-01-30T10:00:19 INFO AuthService User login user=109
+2026-01-30T10:00:20 INFO OrderService Order created order=5003
+2026-01-30T10:00:21 WARN ApiService Slow response api=/search
+2026-01-30T10:00:22 ERROR PaymentService Payment failed user=110
+2026-01-30T10:00:23 INFO AuthService User login user=111
+2026-01-30T10:00:24 INFO CartService Cart updated user=112
+2026-01-30T10:00:25 WARN MemoryService High memory usage
+2026-01-30T10:00:26 ERROR DatabaseService Database timeout
+2026-01-30T10:00:27 INFO OrderService Order created order=5004
+2026-01-30T10:00:28 INFO AuthService User login user=113
+2026-01-30T10:00:29 WARN DiskService Disk almost full
+2026-01-30T10:00:30 ERROR PaymentService Payment failed user=114
+2026-01-30T10:00:31 INFO AuthService User logout user=105
+2026-01-30T10:00:32 INFO AuthService User login user=115
+2026-01-30T10:00:33 INFO OrderService Order created order=5005
+2026-01-30T10:00:34 WARN ApiService Slow response api=/payment
+2026-01-30T10:00:35 ERROR ServiceGateway Service unavailable
+2026-01-30T10:00:36 INFO CartService Cart updated user=116
+2026-01-30T10:00:37 INFO AuthService User login user=117
+2026-01-30T10:00:38 WARN CacheService Cache miss key=user_117
+2026-01-30T10:00:39 ERROR DatabaseService Database timeout
+2026-01-30T10:00:40 INFO OrderService Order created order=5006
