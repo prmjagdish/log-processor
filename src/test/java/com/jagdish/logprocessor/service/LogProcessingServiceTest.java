@@ -1,6 +1,8 @@
 package com.jagdish.logprocessor.service;
 
+import com.jagdish.logprocessor.aggregator.LogAggregator;
 import com.jagdish.logprocessor.queue.EventQueue;
+import com.jagdish.logprocessor.worker.LogProcessor;
 import com.jagdish.logprocessor.worker.LogWorker;
 import org.junit.jupiter.api.Test;
 
@@ -19,11 +21,13 @@ public class LogProcessingServiceTest {
 
         EventQueue queue = mock(EventQueue.class);
         ExecutorService executor = mock(ExecutorService.class);
+        LogProcessor processor = new LogProcessor();
+        LogAggregator aggregator = new LogAggregator();
 
         int workers = 4;
 
         LogProcessingService service =
-                new LogProcessingService(queue, executor, workers);
+                new LogProcessingService(queue, executor, workers, processor, aggregator);
 
         service.start();
 
@@ -35,9 +39,11 @@ public class LogProcessingServiceTest {
 
         EventQueue queue = mock(EventQueue.class);
         ExecutorService executor = mock(ExecutorService.class);
+        LogProcessor processor = new LogProcessor();
+        LogAggregator aggregator = new LogAggregator();
 
         LogProcessingService service =
-                new LogProcessingService(queue, executor, 2);
+                new LogProcessingService(queue, executor, 2, processor, aggregator);
 
         service.stop();
 
@@ -49,12 +55,14 @@ public class LogProcessingServiceTest {
 
         EventQueue queue = mock(EventQueue.class);
         ExecutorService executor = mock(ExecutorService.class);
+        LogProcessor processor = new LogProcessor();
+        LogAggregator aggregator = new LogAggregator();
 
         when(executor.awaitTermination(anyLong(), any()))
                 .thenReturn(true);
 
         LogProcessingService service =
-                new LogProcessingService(queue, executor, 2);
+                new LogProcessingService(queue, executor, 2, processor, aggregator);
 
         service.stop();
 
@@ -66,9 +74,11 @@ public class LogProcessingServiceTest {
 
         EventQueue queue = mock(EventQueue.class);
         ExecutorService executor = Executors.newFixedThreadPool(2);
+        LogProcessor processor = new LogProcessor();
+        LogAggregator aggregator = new LogAggregator();
 
         LogProcessingService service =
-                new LogProcessingService(queue, executor, 2);
+                new LogProcessingService(queue, executor, 2, processor, aggregator);
 
         service.start();
 

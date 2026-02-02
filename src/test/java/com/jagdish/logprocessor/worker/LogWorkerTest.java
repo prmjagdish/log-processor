@@ -1,5 +1,6 @@
 package com.jagdish.logprocessor.worker;
 
+import com.jagdish.logprocessor.aggregator.LogAggregator;
 import com.jagdish.logprocessor.model.LogEvent;
 import com.jagdish.logprocessor.model.LogLevel;
 import com.jagdish.logprocessor.queue.EventQueue;
@@ -17,6 +18,8 @@ public class LogWorkerTest {
     void shouldProcessSingleEvent() throws Exception {
 
         EventQueue queue = mock(EventQueue.class);
+        LogProcessor processor = new LogProcessor();
+        LogAggregator aggregator = mock(LogAggregator.class);
 
         LogEvent event = new LogEvent(now, LogLevel.ERROR,"Payment failed","PaymentService");
 
@@ -24,7 +27,7 @@ public class LogWorkerTest {
                 .thenReturn(event)
                 .thenThrow(new InterruptedException()); // stop loop
 
-        LogWorker worker = spy(new LogWorker(queue));
+        LogWorker worker = spy(new LogWorker(queue, processor, aggregator));
 
         worker.run();
 
@@ -35,6 +38,8 @@ public class LogWorkerTest {
     void shouldProcessMultipleEvents() throws Exception {
 
         EventQueue queue = mock(EventQueue.class);
+        LogProcessor processor = new LogProcessor();
+        LogAggregator aggregator = mock(LogAggregator.class);
 
         LogEvent e1 = new LogEvent(now, LogLevel.ERROR,"Payment failed","PaymentService");
         LogEvent e2 = new LogEvent( now,LogLevel.ERROR,"Payment failed","PaymentService");
@@ -44,7 +49,7 @@ public class LogWorkerTest {
                 .thenReturn(e2)
                 .thenThrow(new InterruptedException());
 
-        LogWorker worker = spy(new LogWorker(queue));
+        LogWorker worker = spy(new LogWorker(queue, processor, aggregator));
 
         worker.run();
 
@@ -56,11 +61,13 @@ public class LogWorkerTest {
     void shouldStopWhenInterrupted() throws Exception {
 
         EventQueue queue = mock(EventQueue.class);
+        LogProcessor processor = new LogProcessor();
+        LogAggregator aggregator = mock(LogAggregator.class);
 
         when(queue.consume())
                 .thenThrow(new InterruptedException());
 
-        LogWorker worker = spy(new LogWorker(queue));
+        LogWorker worker = spy(new LogWorker(queue, processor, aggregator));
 
         worker.run();
 
@@ -71,13 +78,15 @@ public class LogWorkerTest {
     void shouldKeepConsumingUntilInterrupted() throws Exception {
 
         EventQueue queue = mock(EventQueue.class);
+        LogProcessor processor = new LogProcessor();
+        LogAggregator aggregator = mock(LogAggregator.class);
 
         when(queue.consume())
                 .thenReturn(new LogEvent(now, LogLevel.ERROR,"Payment failed","PaymentService"))
                 .thenReturn(new LogEvent( now,LogLevel.ERROR,"Payment failed","PaymentService"))
                 .thenThrow(new InterruptedException());
 
-        LogWorker worker = spy(new LogWorker(queue));
+        LogWorker worker = spy(new LogWorker(queue, processor, aggregator));
 
         worker.run();
 

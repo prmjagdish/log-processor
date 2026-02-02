@@ -1,14 +1,19 @@
 package com.jagdish.logprocessor.worker;
 
+import com.jagdish.logprocessor.aggregator.LogAggregator;
 import com.jagdish.logprocessor.model.LogEvent;
 import com.jagdish.logprocessor.queue.EventQueue;
 
 public class LogWorker implements Runnable{
 
     private final EventQueue queue;
+    private final LogProcessor processor;
+    private final LogAggregator aggregator;
 
-    public LogWorker(EventQueue queue) {
+    public LogWorker(EventQueue queue, LogProcessor processor, LogAggregator aggregator) {
         this.queue = queue;
+        this.processor = processor;
+        this.aggregator = aggregator;
     }
 
     @Override
@@ -25,6 +30,7 @@ public class LogWorker implements Runnable{
     }
 
     protected void process(LogEvent event){
-        System.out.println(event);
+        LogProcessor.ProcessedLog processed = processor.process(event);
+        aggregator.record(processed.getLevel());
     }
 }
